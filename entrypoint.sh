@@ -4,8 +4,8 @@
 set -eu
 
 # Variables.
-PIC_PATH="$GITHUB_WORKSPACE/$PIC_PATH"
-COMP_LEVEL="$COMPRESS_LEVEL" 
+PIC_PATH="$GITHUB_WORKSPACE/$INPUT_PIC_PATH"
+COMP_LEVEL="$INPUT_COMPRESS_LEVEL" 
 
 # Compress pic
 for file in `find $PIC_PATH -regex '.*\.png\|.*\.jpg'`; do 
