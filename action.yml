@@ -1,0 +1,22 @@
+name: 'Compress Picture Action'
+description: 'GitHub Action for compress picture(PNG, JPEG, GIF)'
+author: 'Aliasmee'
+inputs:
+  switches:
+    description: 'The switches'
+    required: false
+    default: ''
+  pic_path:
+    description: 'The pic location path'
+    required: false
+    default: ''
+  compress_level:
+    description: 'Compress optimization level(0-7), defailt 2'
+    required: false
+    default: 2
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'archive'  
+  color: 'green'
